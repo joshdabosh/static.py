@@ -14,7 +14,7 @@ It recursively calls ldd and copies all the required .so files. Then, it also ne
 
 For example, making a redistributable `/usr/bin/ls` in running container `bbb`:
 
-`./lmao.py bbb:/usr/bin/ls`
+`./static.py bbb:/usr/bin/ls`
 
 If you want to use this for simplifying binary exploitation the actual binary is the `<binary>.1` in `out/`. Remember to set `LD_LIBRARY_PATH=.` in your environment vars when running.
 
